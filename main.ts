@@ -57,6 +57,7 @@ export const handler = (request: Request): Response => {
         main {
             max-width: 800px;
             margin-top: 30vh;
+            min-height: 70vh;
         }
         
         h1 {
