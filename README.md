@@ -1,7 +1,7 @@
 # title
 
-I miss when you could just write a URL like this in a browser, and it would
-render it:
+I miss when you could write a URL like this in a browser, and it would render
+it:
 
     about:Hello World
 
