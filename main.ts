@@ -40,6 +40,7 @@ export const handler = (request: Request): Response => {
 <!DOCTYPE html>
   <html>
     <head>
+      <meta charset="utf-8">
       <title>${title.title}</title>
       <style>
         body {
