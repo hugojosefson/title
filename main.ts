@@ -42,6 +42,12 @@ export const handler = (request: Request): Response => {
     <head>
       <meta charset="utf-8">
       <title>${title.title}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="create link with title, and optional text">
+      <meta name="keywords" content="url, placeholder, bookmark, tabs, tab, title, divider">
+      <meta name="theme-color" content="#000000">
+      <meta name="msapplication-TileColor" content="#000000">
+
       <style>
         body {
             text-align: center;
@@ -58,6 +64,8 @@ export const handler = (request: Request): Response => {
         main {
             max-width: 800px;
             margin-top: 30vh;
+            margin-left: 2em;
+            margin-right: 2em;
             min-height: 70vh;
         }
         
