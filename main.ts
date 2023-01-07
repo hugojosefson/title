@@ -15,11 +15,12 @@ function getTitle(request: Request): TitleResponse {
   const decodedPath = decodeURIComponent(path);
   const decodedSearch = decodeURIComponent(search);
   if (decodedPath === "" && decodedSearch === "") {
-    const suggestedUrl = `${url.origin}/${encodeURIComponent("Hello World")}`;
+    const suggestedLinkUrl = `${url.origin}/Hello World`;
+    const suggestedLinkText = suggestedLinkUrl.replace(/^https?:\/\//, "");
     return {
       title: "Type something in the URL",
       h1: "Type something in the URL",
-      p: `for example like <a href="${suggestedUrl}">${suggestedUrl}</a>`,
+      p: `for example like <a href="${suggestedLinkUrl}">${suggestedLinkText}</a>`,
     };
   }
   return {
